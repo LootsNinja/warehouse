@@ -12,7 +12,7 @@ public class DummyBookService {
 
     @GetMapping
     public Mono<Book> getDummyBook(){
-        Book book = Book.builder().Author("Mansour").ISBN("123-456-789-0123").Title("The war of peace").build();
+        Book book = Book.builder().author("Mansour").isbn("123-456-789-0123").title("The war of peace").build();
         return Mono.just(book);
     }
 
